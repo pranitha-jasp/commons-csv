@@ -56,7 +56,7 @@ public class PerformanceTest {
             return;
         }
         System.out.println("Decompressing test fixture " + BIG_FILE + "...");
-        final InputStream input = new GZIPInputStream(new FileInputStream("src/test/resources/perf/worldcitiespop.txt.gz"));
+        final InputStream input = new GZIPInputStream(new FileInputStream("src/test/resources/perf/test.txt"));
         final OutputStream output = new FileOutputStream(BIG_FILE);
         IOUtils.copy(input, output);
         System.out.println(String.format("Decompressed test fixture %s: %,d bytes.", BIG_FILE, BIG_FILE.length()));
