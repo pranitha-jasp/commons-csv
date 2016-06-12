@@ -47,7 +47,7 @@ public class PerformanceTest {
 
     private final int max = 10;
 
-    private static final File BIG_FILE = new File(System.getProperty("java.io.tmpdir"), "worldcitiespop.txt");
+    private static final File BIG_FILE = new File(System.getProperty("java.io.tmpdir"), "test.txt");
 
     @BeforeClass
     public static void setUpClass() throws FileNotFoundException, IOException {
